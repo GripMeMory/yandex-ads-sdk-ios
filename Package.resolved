@@ -116,15 +116,6 @@
         "revision" : "ba4ea916c39d3c04c9497c306f03d255731ca068",
         "version" : "7.4.0"
       }
-    },
-    {
-      "identity" : "vungleadssdk-swiftpackagemanager",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager",
-      "state" : {
-        "revision" : "bdec2a7c83c9ee65c07c7ca9037b6ee72f69edd1",
-        "version" : "7.4.5"
-      }
     }
   ],
   "version" : 2

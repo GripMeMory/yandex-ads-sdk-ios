@@ -21,10 +21,10 @@ let package = Package(
             name: "GoogleYandexMobileAdsAdapters",
             targets: ["GoogleYandexMobileAdsAdaptersWrapper"]
         ),
-        .library(
-            name: "VungleYandexMobileAdsAdapters",
-            targets: ["VungleYandexMobileAdsAdaptersWrapper"]
-        ),
+//        .library(
+//            name: "VungleYandexMobileAdsAdapters",
+//            targets: ["VungleYandexMobileAdsAdaptersWrapper"]
+//        ),
         .library(
             name: "AppLovinYandexMobileAdsAdapters",
             targets: ["AppLovinYandexMobileAdsAdaptersWrapper"]
@@ -42,7 +42,7 @@ let package = Package(
             targets: [
                 "YandexMobileAdsMediation",
                 "GoogleYandexMobileAdsAdaptersWrapper",
-                "VungleYandexMobileAdsAdaptersWrapper",
+//                "VungleYandexMobileAdsAdaptersWrapper",
                 "AppLovinYandexMobileAdsAdaptersWrapper",
                 "MyTargetYandexMobileAdsAdaptersWrapper",
                 "MintegralYandexMobileAdsAdaptersWrapper"
@@ -53,7 +53,7 @@ let package = Package(
         .package(url: "https://github.com/appmetrica/appmetrica-sdk-ios", "5.11.0"..<"6.0.0"),
         .package(url: "https://github.com/divkit/divkit-ios-facade", exact: "5.0.0"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .upToNextMinor(from: "12.2.0")),
-        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", .upToNextMinor(from: "7.4.2")),
+//        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", .upToNextMinor(from: "7.5.2")),
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", .upToNextMinor(from: "13.1.0")),
         .package(url: "https://github.com/myTargetSDK/mytarget-ios-spm", .upToNextMinor(from: "5.28.0")),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", .upToNextMinor(from: "7.7.7"))
@@ -107,14 +107,14 @@ let package = Package(
                 .target(name: "YandexMobileAdsWrapper")
             ]
         ),
-        .target(
-            name: "VungleYandexMobileAdsAdaptersWrapper",
-            dependencies: [
-                .product(name: "VungleAdsSDK", package: "VungleAdsSDK-SwiftPackageManager"),
-                .target(name: "VungleYandexMobileAdsAdapters"),
-                .target(name: "YandexMobileAdsWrapper")
-            ]
-        ),
+//        .target(
+//            name: "VungleYandexMobileAdsAdaptersWrapper",
+//            dependencies: [
+//                .product(name: "VungleAdsSDK", package: "VungleAdsSDK-SwiftPackageManager"),
+//                .target(name: "VungleYandexMobileAdsAdapters"),
+//                .target(name: "YandexMobileAdsWrapper")
+//            ]
+//        ),
         .target(
             name: "AppLovinYandexMobileAdsAdaptersWrapper",
             dependencies: [
@@ -154,11 +154,11 @@ let package = Package(
             url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/GoogleYandexMobileAdsAdapters/12.2.0.3/spm/aa2c7779-8d17-4de1-a25b-f6549db24f1e.zip",
             checksum: "6a7c85cf7b4179340b852afa7b204f0c08e1aad90124054ae88eb0241cf6c519"
         ),
-        .binaryTarget(
-            name: "VungleYandexMobileAdsAdapters",
-            url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/VungleYandexMobileAdsAdapters/7.4.2.9/spm/5a7d2b2e-8435-45da-9e3d-08e685032557.zip",
-            checksum: "ecd19c474ffcaf5af68296d6b6813bcf9c3df1a3509f0690eb0fe7eca7dff4ee"
-        ),
+//        .binaryTarget(
+//            name: "VungleYandexMobileAdsAdapters",
+//            url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/VungleYandexMobileAdsAdapters/7.4.2.9/spm/5a7d2b2e-8435-45da-9e3d-08e685032557.zip",
+//            checksum: "ecd19c474ffcaf5af68296d6b6813bcf9c3df1a3509f0690eb0fe7eca7dff4ee"
+//        ),
         .binaryTarget(
             name: "AppLovinYandexMobileAdsAdapters",
             url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/AppLovinYandexMobileAdsAdapters/13.1.0.3/spm/f5fa3c70-8e27-433d-8880-c1ab1707cc2f.zip",
